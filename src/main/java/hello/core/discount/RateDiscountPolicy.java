@@ -2,10 +2,12 @@ package hello.core.discount;
 
 import hello.core.member.Grade;
 import hello.core.member.Member;
+import org.springframework.stereotype.Component;
 
 /**
  * 주문한 금액의 %를 할인해주는 새로운 정률 할인 정책을 추가
  */
+@Component
 public class RateDiscountPolicy implements DiscountPolicy {
 
     private int discountPercent = 10; //10% 할인
